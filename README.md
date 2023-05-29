@@ -9,6 +9,6 @@ This is a modified version of [yui540's palette](https://github.com/yui540/palet
 - The Copy Button is now responsive.
 - The color code contrast has been improved for different colors.
 
-# Important Notes
+# Important Note
 
 Please note that this project is solely for practicing interface styling and design, and all credit goes to [yui540](https://github.com/yui540)
