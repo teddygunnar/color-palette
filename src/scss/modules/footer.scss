@@ -1,45 +1,44 @@
 .footer-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    z-index: 10;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 
-    @include pc-layout {
-        height: 120px;
-        margin-top: 50px;
-    }
+  @include pc-layout {
+    height: 120px;
+    margin-top: 50px;
+  }
 
-    @include sp-layout {
-        height: 100px;
-        margin-top: 40px;
-    }
+  @include sp-layout {
+    height: 100px;
+    margin-top: 40px;
+  }
 
-    div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 500%;
-        height: 500%;
-        transform-origin: left top;
-    }
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    transform-origin: left top;
+  }
 
-    div:nth-child(1) {
-        transform: rotate(6deg);
-        background-color: #2089a5;
-    }
+  div:nth-child(1) {
+    transform: rotate(6deg);
+    background-color: #2089a5;
+  }
 
-    div:nth-child(2) {
-        transform: rotate(8deg);
-        background-color: #c7aa71;
-    }
+  div:nth-child(2) {
+    transform: rotate(8deg);
+    background-color: #c7aa71;
+  }
 
-    div:nth-child(3) {
-        transform: rotate(12deg);
-        background-color: #ad1341;
-    }
+  div:nth-child(3) {
+    transform: rotate(12deg);
+    background-color: #ad1341;
+  }
 
-    div:nth-child(4) {
-        transform: rotate(16deg);
-        background-color: #5d3523;
-    }
+  div:nth-child(4) {
+    transform: rotate(16deg);
+    background-color: #5d3523;
+  }
 }

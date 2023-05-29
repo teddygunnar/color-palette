@@ -1,11 +1,11 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 
 interface IPreview {
   color: string;
   open: boolean;
 }
 
-const Preview: FC<IPreview> = ({ color, open }) => {
+const Preview: FC<IPreview> = memo(({ color, open }) => {
   return (
     <div
       className="preview-container"
@@ -15,6 +15,6 @@ const Preview: FC<IPreview> = ({ color, open }) => {
       <span className="preview-color-code">{color}</span>
     </div>
   );
-};
+});
 
 export default Preview;

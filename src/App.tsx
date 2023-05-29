@@ -1,4 +1,4 @@
-import { Body, Header, Footer } from "./components";
+import { Body, Header, Footer, SnS } from "./components";
 
 const App = () => {
   return (
@@ -6,6 +6,7 @@ const App = () => {
       <Header />
       <Body />
       <Footer />
+      <SnS />
     </>
   );
 };

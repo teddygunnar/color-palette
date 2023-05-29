@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { CSSProperties, FC, useEffect } from "react";
 import { ColorProps } from "../core/_models";
 
 const Colors: FC<ColorProps> = ({
@@ -6,6 +6,7 @@ const Colors: FC<ColorProps> = ({
   product,
   onMouseOver,
   onMouseOut,
+  handleOpenModal,
   num,
 }) => {
   return (
@@ -13,11 +14,11 @@ const Colors: FC<ColorProps> = ({
       className="colors-container"
       onMouseOver={() => onMouseOver(num)}
       onMouseOut={onMouseOut}
+      onClick={() => handleOpenModal(num)}
     >
-      <div className="colors-bg-color" style={{ backgroundColor: color }} />
-      <span className="colors-code-copy">Color Copied!</span>
-      <span className="colors-color-code">{color}</span>
+      <div className="colors-bg-color" style={{ '--color': color } as CSSProperties} />
       <span className="colors-product-name">{product.name}</span>
+      <span className="colors-color-code">{color}</span>
     </div>
   );
 };

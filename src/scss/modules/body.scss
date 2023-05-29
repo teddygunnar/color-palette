@@ -1,19 +1,19 @@
 .body-color-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-    opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
 
-    @include pc-layout {
-        max-width: 740px;
-        margin-top: 10px;
-    }
+  @include pc-layout {
+    max-width: 740px;
+    margin-top: 10px;
+  }
 
-    @include sp-layout {
-        margin-top: 5px;
-    }
+  @include sp-layout {
+    margin-top: 5px;
+  }
 
-    animation: fadeIn 1.5s ease .3s forwards;
+  animation: fadeIn 1.5s ease 0.3s forwards;
 }
