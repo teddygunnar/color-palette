@@ -184,6 +184,20 @@
   }
 }
 
+@keyframes bound-header {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  50% {
+    transform: translateY(-3vh);
+  }
+
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotateY(45deg);

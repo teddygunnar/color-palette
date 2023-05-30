@@ -9,6 +9,7 @@ import React, {
 } from "react";
 import { Color } from "../core/_models";
 import tinyColor from "tinycolor2";
+import { getBrightness } from "../../helper";
 
 interface ModalProps {
   openModal: boolean;
@@ -31,18 +32,10 @@ const Modal: FC<ModalProps> = memo(
     const [copied, setCopied] = useState<boolean>(false);
     const timerRef = useRef<number | null>(null);
 
-    const calcBrightness = useCallback(
-      (color: string) => {
-        const rgb = tinyColor(color).toRgb();
-        const { r, g, b } = rgb;
-
-        const _brightness = (r * 299 + g * 587 + b * 114) / 1000;
-        const determineBrightness = _brightness < 190 ? "light" : "dark";
-
-        setBrightness(determineBrightness);
-      },
-      [brightness]
-    );
+    const calcBrightness = useCallback((_color: string) => {
+      const brightness = getBrightness(_color);
+      setBrightness(brightness);
+    }, []);
 
     const handleCopyColor = useCallback(() => {
       navigator.clipboard.writeText(color);

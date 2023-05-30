@@ -1,15 +1,14 @@
 .header-logo {
-    display: block;
-    margin: 0 auto;
-    transform: translateY(-30%);
-    opacity: 0;
-    animation: fadeIn 1.5s ease 0s forwards;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-100%);
+  animation: bound 3s ease 0s forwards;
 
-    @include pc-layout {
-        width: 400px;
-    }
+  @include pc-layout {
+    width: 400px;
+  }
 
-    @include sp-layout {
-        width: 65%;
-    }
+  @include sp-layout {
+    width: 65%;
+  }
 }
