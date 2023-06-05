@@ -2,7 +2,7 @@
 
 [Online Demo](https://palette-qbmh5yupo-izanagi4.vercel.app/)
 
-This is a modified version of [yui540's palette](https://github.com/yui540/palette) with a few notable differences:
+This is a modified version of [yui540's palette](https://github.com/yui540/palette) with a few notable differences
 
 # Changes
 
@@ -10,6 +10,7 @@ This is a modified version of [yui540's palette](https://github.com/yui540/palet
 - The implementation has been done using Vite.
 - The Copy Button is now responsive.
 - The color code contrast has been improved for different colors.
+- Boing - Boing Title.
 
 # Important Note
 
